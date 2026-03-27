@@ -1,0 +1,399 @@
+/* Reset basic */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "inter", serif;
+}
+
+:root {
+    /* Principales */
+    --color-primary: #f28a24;
+    --color-secondary: #343434;
+
+    /* Fondo */
+    --color-bg: #1f1f1f;
+    --color-bg-light: #2a2a2a;
+
+    /* Texto */
+    --color-text: #ffffff;
+    --color-text-secondary: #b0b0b0;
+
+    /* Accent */
+    --color-accent: #ffb347;
+
+    /* Bordes */
+    --color-border: #444444;
+
+    /* Estados */
+    --color-success: #4caf50;
+    --color-error: #f44336;
+    --color-warning: #ff9800;
+}
+
+/* ----------------------------------------------- */
+/* ---------------   HEADER   -------------------- */
+/* ----------------------------------------------- */
+
+
+.logo {
+    width: 200px;
+}
+
+/* navbar */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background: var(--color-secondary);
+    backdrop-filter: blur(7px);
+
+    z-index: 999;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 2rem;
+    max-width: 1600px;
+}
+
+.navbar-container .navbar-menu {
+    display: none;
+    list-style: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.7rem;
+    position: absolute;
+    height: 100vh;
+    width: 250px;
+    top: 0;
+    right: 0;
+    padding: 5rem 1.5rem;
+    box-shadow: 0 10px 10px var(--color-bg);
+    backdrop-filter: blur(10px);
+}
+
+.navbar-container .navbar-menu li a {
+    text-decoration: none;
+    color: var(--color-accent);
+    font-size: 1.3rem;
+    padding: 3px 20px;
+}
+
+.navbar-container .navbar-menu li {
+    padding: 10px 0px;
+}
+
+.navbar-toggle {
+    display: block;
+    z-index: 999;
+    background: transparent;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background: white;
+    transition: all 0.3s ease-in-out;
+}
+
+/* toggle para que el boton funcione */
+.navbar-container .navbar-menu.active {
+    display: flex;
+    background: var(--color-secondary);
+}
+
+/* movimiento de boton */
+
+.navbar-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-toggle.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.navbar-toggle.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+
+/* Hero IMG----------------------- */
+/* -------------------------------- */
+
+.hero-container .slider-wrapper img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-container {
+
+    width: 100%;
+    aspect-ratio: 3840 / 1440;
+    overflow: hidden;
+    background: #000;
+}
+
+/* generar movimiento de el hero */
+
+.slider-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+
+.slider-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.slider-wrapper img {
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    scroll-snap-align: start;
+}
+
+/* HERO titulo y description */
+
+.hero-titulo {
+    position: relative;
+    padding: 1rem;
+}
+
+.hero-titulo h1 {
+    color: var(--color-accent);
+    font-size: 2.5rem;
+
+}
+
+.hero-titulo p {
+    padding-top: 1rem;
+    font-size: 1rem;
+    color: var(--color-text-secondary);
+}
+
+
+/* ------------------------------------------------------------ */
+/* MAIN   ----------------------------------------------------- */
+/* ------------------------------------------------------------ */
+
+/* MAIN ------------------------------------------------ INDEX */
+
+/* secion1 */
+
+.section-1 {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-description h2 {
+    color: var(--color-accent);
+    font-size: 2rem;
+}
+
+.team-description p {
+    color: var(--color-border);
+}
+
+.team-description {
+    text-align: justify;
+}
+
+.team-foto img {
+    justify-content: center;
+    width: 20rem;
+    padding: 2rem 0;
+}
+
+/* section 2 */
+
+.section-2 {
+    display: flex;
+    flex-direction: column;
+    padding: 0 3rem;
+    color: var(--color-text);
+}
+
+.card {
+    padding: 2rem;
+    background: var(--color-secondary);
+    text-align: center;
+    margin: 1rem;
+    border-radius: 1rem;
+    box-shadow:  5px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.card p {
+    color: var(--color-text-secondary);
+}
+
+/* efecto section2 */
+.card:hover {
+    background: var(--color-border);
+    transform: scale(1.02);
+}
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------ */
+/* FOOTER ----------------------------------------------------- */
+/* ------------------------------------------------------------ */
+
+.footer {
+    background: var(--color-border);
+    color: var(--color-text);
+}
+
+.footer-container {
+    display: grid;
+    grid-template-rows: row;
+    padding: 5rem 0 0 0;
+}
+
+.footer-col {
+    padding: 2rem 1rem;
+}
+
+.footer-col p {
+    text-align: justify;
+}
+
+.footer-col ul li {
+    list-style: none;
+    margin: 0 0 1rem 0;
+}
+
+.footer-col ul li a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+.footer-col img {
+    padding-bottom: 1rem;
+}
+
+.footer-col h3 {
+    padding-bottom: 1rem;
+}
+
+.social {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.social a img {
+    width: 50px;
+    margin: 0 1rem 0 0;
+
+}
+
+.footer-bottom {
+    background: var(--color-secondary);
+    padding: 2rem;
+    text-align: center;
+}
+
+/* boton de what's app */
+
+/* --- ESTILO DEL BOTÓN --- */
+.wa-floating-container {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wa-button {
+    width: 65px;
+    height: 65px;
+    background-color: #25D366;
+    /* Verde Original */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: none;
+    z-index: 2;
+}
+
+.wa-icon {
+    width: 35px;
+    height: 35px;
+    fill: white;
+    transition: transform 0.3s ease;
+}
+
+/* --- HOVER (Al pasar el mouse) --- */
+.wa-floating-container:hover .wa-button {
+    transform: scale(1.1);
+    /* Crece un poquito */
+    background-color: #2be671;
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+}
+
+/* --- CLICK (Efecto físico) --- */
+.wa-button:active {
+    transform: scale(0.9) !important;
+    /* Se hunde */
+    background-color: #128C7E;
+    transition: 0.1s;
+}
+
+/* --- PARTÍCULAS TECH --- */
+.particle {
+    position: absolute;
+    border-radius: 2px;
+    /* Cuadradas como píxeles de hardware */
+    pointer-events: none;
+    opacity: 0;
+    z-index: 1;
+}
+
+@keyframes explode {
+    0% {
+        transform: translate(0, 0) scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(var(--x), var(--y)) scale(0);
+        opacity: 0;
+    }
+}

@@ -1,0 +1,151 @@
+@media (min-width: 1024px) {
+
+  /* HEADER----------------------- */
+  /* ----------------------------- */
+  /* ----------------------------- */
+
+  .navbar-container .navbar-menu {
+    display: flex;
+    position: static;
+    flex-direction: row;
+    height: auto;
+    width: auto;
+    padding: 0;
+    box-shadow: none;
+    backdrop-filter: none;
+    align-items: center;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  .navbar-container .navbar-menu li a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 3px 20px;
+    color: white;
+    transition: color 0.3s;
+    position: relative;
+  }
+
+  /* efecto de linea y color navbar */
+  .navbar li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: var(--color-primary);
+    /* Color naranja */
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+  }
+
+  .navbar-menu li a:hover::after,
+  .navbar-menu li a.active::after {
+    width: 70%;
+  }
+
+  .navbar-menu li a:hover {
+    color: #ff8c00;
+  }
+
+  .navbar {
+    position: absolute;
+    background: transparent;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  /* hero TITULO */
+  .hero-titulo {
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+
+  .hero-titulo h1 {
+    color: white;
+    /* background: linear-gradient(rgba(0,0,0,0.5)); */
+    font-size: 4rem;
+
+  }
+
+  .hero-titulo p {
+    color: var(--color-text);
+  }
+
+  /* ------------------------------------------------------------ */
+  /* MAIN   ----------------------------------------------------- */
+  /* ------------------------------------------------------------ */
+
+  /* MAIN ------------------------------------------------ INDEX */
+
+  /* secion1 */
+  .section-1 {
+    flex-direction: row;
+    margin: 0 20rem;
+  }
+
+  .team-foto, .team-description {
+    padding: 0 2rem;
+  }
+
+  /* section2 */
+
+  .section-2 {
+    flex-direction: row;
+    margin: 0 10rem;
+  }
+
+  .card {
+    width: 20rem;
+  }
+
+
+
+
+  /* ---------------------------------------------- */
+  /* FOOTER ---------------------------------------- */
+  /* ---------------------------------------------- */
+
+  .footer-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 0 10rem;
+    text-align: center;
+  }
+
+  .footer-col.sec {
+    margin-bottom: 3rem;
+  }
+
+  .footer-col.sec h3 {
+    margin-top: 2.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 7;
+
+  }
+
+  .social a img {
+    width: 50px;
+    margin: 1rem;
+
+    transition: transform 0.2s ease;
+  }
+
+  .social a img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
+
+}
