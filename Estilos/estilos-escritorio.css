@@ -90,19 +90,40 @@
     margin: 0 20rem;
   }
 
-  .team-foto, .team-description {
+  .team-foto,
+  .team-description {
     padding: 0 2rem;
   }
 
   /* section2 */
 
   .section-2 {
+    display: flex;
     flex-direction: row;
-    margin: 0 10rem;
+    justify-content: center;
+
   }
 
   .card {
-    width: 20rem;
+    width: 15rem;
+  }
+
+
+  /* MAIN ------------------------------------------------ CLIENTES */
+
+  /* secion1 */
+  .img-clientes {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+
+  /* MAIN ------------------------------------------------ SERVICIOS */
+
+  .section-2.ser{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
   }
 
 
