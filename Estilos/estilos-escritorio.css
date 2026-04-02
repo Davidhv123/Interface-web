@@ -4,6 +4,15 @@
   /* ----------------------------- */
   /* ----------------------------- */
 
+  .logo {
+    width: 200px;
+    display: block;
+  }
+
+  .logo-min {
+    display: none;
+  }
+
   .navbar-container .navbar-menu {
     display: flex;
     position: static;
@@ -120,11 +129,41 @@
 
   /* MAIN ------------------------------------------------ SERVICIOS */
 
-  .section-2.ser{
+  .section-2.ser {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
   }
+
+  /* Informacion de los servicios */
+
+  .informacion-servicios {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 20rem;
+  }
+
+  .informacion-servicios img {
+    width: 30rem;
+  }
+
+  .descripcion-servicios {
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    height: auto;
+  }
+
+  .descripcion-servicios .boton-servicios {
+    display: flex;
+    margin-top: 15%;
+  }
+
+  .boton-servicios {
+    display: none;
+  }
+
 
 
 
