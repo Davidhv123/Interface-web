@@ -355,6 +355,13 @@ body {
     width: 10rem;
 }
 
+.card2 div {
+    background: linear-gradient(to right, rgb(255, 143, 51), #ffb36c);
+    color: white;
+    padding: 1rem;
+    transform: skew(45deg);
+}
+
 .section-2 .card2 {
     display: flex;
     flex-direction: column;
@@ -549,7 +556,6 @@ body {
     width: 65px;
     height: 65px;
     background-color: #25D366;
-    /* Verde Original */
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -569,27 +575,21 @@ body {
     transition: transform 0.3s ease;
 }
 
-/* --- HOVER (Al pasar el mouse) --- */
 .wa-floating-container:hover .wa-button {
     transform: scale(1.1);
-    /* Crece un poquito */
     background-color: #2be671;
     box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
 }
 
-/* --- CLICK (Efecto físico) --- */
 .wa-button:active {
     transform: scale(0.9) !important;
-    /* Se hunde */
     background-color: #128C7E;
     transition: 0.1s;
 }
 
-/* --- PARTÍCULAS TECH --- */
 .particle {
     position: absolute;
     border-radius: 2px;
-    /* Cuadradas como píxeles de hardware */
     pointer-events: none;
     opacity: 0;
     z-index: 1;
