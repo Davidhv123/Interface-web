@@ -91,6 +91,10 @@
     color: var(--color-text);
   }
 
+  .img-tecnico {
+    display: none;
+  }
+
   /* ------------------------------------------------------------ */
   /* MAIN   ----------------------------------------------------- */
   /* ------------------------------------------------------------ */
@@ -119,6 +123,11 @@
 
   .card {
     width: 15rem;
+    height: 18rem;
+  }
+
+  .card2 {
+    width: 310px;
   }
 
 
@@ -136,6 +145,8 @@
   .section-2.ser {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    margin: 2rem 15rem;
 
   }
 

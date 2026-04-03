@@ -145,7 +145,7 @@ body {
 /* -------------------------------- */
 
 .hero-container .slider-wrapper img {
-    width: 100%;
+    width: 200%;
     height: auto;
 }
 
@@ -201,6 +201,7 @@ body {
 .hero-titulo {
     position: relative;
     padding: 1rem;
+    margin-top: 1rem;
 }
 
 .hero-titulo h1 {
@@ -213,6 +214,15 @@ body {
     padding-top: 1rem;
     font-size: 1rem;
     color: var(--color-text-secondary);
+}
+
+.img-tecnico {
+    display: flex;
+    justify-content: center;
+}
+
+.img-tecnico img {
+    width: 20rem;
 }
 
 
@@ -260,10 +270,14 @@ body {
 .section-2 {
     display: flex;
     flex-direction: column;
+    align-items: center;
     color: var(--color-accent);
+    margin: 2rem 0;
 }
 
 .card {
+    height: auto;
+    width: 280px;
     padding: 2rem;
     background: white;
     text-align: start;
@@ -276,6 +290,10 @@ body {
 }
 
 .card p {
+    color: var(--color-text-secondary);
+}
+
+.card ul li {
     color: var(--color-text-secondary);
 }
 
@@ -355,21 +373,22 @@ body {
     width: 10rem;
 }
 
-.card2 div {
+.card2 a div {
     background: linear-gradient(to right, rgb(255, 143, 51), #ffb36c);
     color: white;
+    font-weight: 700;
     padding: 1rem;
-    transform: skew(45deg);
+    border-radius: 2rem 0;
+    text-align: center;
+    width: 100%;
 }
 
-.section-2 .card2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 1rem;
+
+
+.card2 {
+    width: 280px;
+    border-radius: 2rem 0;
     margin: 1rem;
-    padding: 1.5rem;
     transition:
         background 0.3s ease,
         transform 0.3s ease,
@@ -379,9 +398,17 @@ body {
 }
 
 .card2:hover {
-    background: #f5f5f5;
+    background: #ffffff;
     transform: scale(1.02);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card2 a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
 }
 
 
