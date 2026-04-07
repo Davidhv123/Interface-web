@@ -4,9 +4,12 @@
   /* ----------------------------- */
   /* ----------------------------- */
 
-  .logo {
-    width: 200px;
+  .logo-big {
     display: block;
+  }
+
+  .logo {
+    width: 150px;
   }
 
   .logo-min {
@@ -160,8 +163,10 @@
   }
 
   .informacion-servicios img {
-    width: 30rem;
-  }
+    width: 300px;
+    height: auto;
+    margin: 2rem 0 2rem 0;
+}
 
   .descripcion-servicios {
     display: flex;
@@ -193,10 +198,6 @@
     text-align: center;
   }
 
-  .footer-col.sec {
-    margin-bottom: 3rem;
-  }
-
   .footer-col.sec h3 {
     margin-top: 2.2rem;
     margin-bottom: 1rem;
@@ -204,10 +205,8 @@
 
   .social {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    margin-top: 7;
-
   }
 
   .social a img {
@@ -220,6 +219,10 @@
   .social a img:hover {
     transform: scale(1.1);
     cursor: pointer;
+  }
+
+  .footer-col.logo {
+    align-content: center;
   }
 
 

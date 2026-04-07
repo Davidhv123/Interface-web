@@ -39,7 +39,7 @@ body {
 /* ----------------------------------------------- */
 
 
-.logo {
+.logo-big {
     display: none;
 }
 .logo-min {
@@ -224,6 +224,7 @@ body {
 .img-tecnico img {
     width: 20rem;
 }
+
 
 
 /* ------------------------------------------------------------ */
@@ -421,8 +422,11 @@ body {
 }
 
 .informacion-servicios img {
+    display: inline-block;
     width: 350px;
-    padding: 2rem 0 0 0;
+    height: auto;
+    margin: 2rem 0 0 0;
+    border-radius: 2rem;
 }
 
 .informacion-servicios .descripcion-servicios h3 {
@@ -519,11 +523,11 @@ body {
 .footer-container {
     display: grid;
     grid-template-rows: row;
-    padding: 5rem 0 0 0;
+    padding: 1rem 0 0 0;
 }
 
 .footer-col {
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
 }
 
 .footer-col p {
