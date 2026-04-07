@@ -184,6 +184,32 @@
     display: none;
   }
 
+  /* Informacion productos */
+
+  .informacion-servicios.productos {
+    margin: 0;
+    flex-direction: column;
+  }
+
+  .informacion-servicios.productos .descripcion-servicios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .informacion-servicios.productos .descripcion-servicios .boton-servicios {
+    display: none;
+  }
+
+  .boton-servicios-contenedor.productos .boton-servicios{
+    display: flex;
+  }
+
+  .contenedor-img-productos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
 
 
 
