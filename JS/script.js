@@ -21,7 +21,7 @@ navbarToggle.addEventListener("click", () => {
 // ------------------------------------------------------------------
 const slider = document.querySelector('.slider-wrapper');
 let counter = 0;
-const totalImages = 5;
+const totalImages = 6;
 
 setInterval(() => {
     counter++;
