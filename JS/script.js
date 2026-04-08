@@ -34,7 +34,7 @@ setInterval(() => {
         left: slider.clientWidth * counter,
         behavior: 'smooth'
     });
-}, 7000); // Cambia cada 5 segundos
+}, 5000); // Cambia cada 5 segundos
 
 
 
