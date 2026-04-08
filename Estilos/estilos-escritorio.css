@@ -165,7 +165,7 @@
   .informacion-servicios img {
     width: 300px;
     height: auto;
-    margin: 2rem 0 2rem 0;
+    margin: 2rem;
 }
 
   .descripcion-servicios {
@@ -208,6 +208,8 @@
   .contenedor-img-productos {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
 
 
