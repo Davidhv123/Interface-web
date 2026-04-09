@@ -181,19 +181,22 @@ body {
 }
 
 /* banner sencillo */
+
 .img-ban {
-    display: flex;
-    background: var(--color-secondary);
-    color: white;
-    width: 100%;
-    height: 300px;
+    display:flex;
+    width: auto;
+    height: auto;
     justify-content: center;
-    align-items: center;
+
 }
 
 .img-ban img {
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+}
+
+.img-ban-max {
+    display: none;
+
 }
 
 /* HERO titulo y description */

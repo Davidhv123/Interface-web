@@ -74,6 +74,16 @@
     margin-bottom: 3rem;
   }
 
+  /* banner sencillo */
+  .img-ban-max {
+    display: flex;
+  }
+
+  .img-ban-min {
+    display: none;
+  }
+
+
   /* hero TITULO */
   .hero-titulo {
     position: absolute;
@@ -166,7 +176,7 @@
     width: 300px;
     height: auto;
     margin: 2rem;
-}
+  }
 
   .descripcion-servicios {
     display: flex;
@@ -201,7 +211,7 @@
     display: none;
   }
 
-  .boton-servicios-contenedor.productos .boton-servicios{
+  .boton-servicios-contenedor.productos .boton-servicios {
     display: flex;
   }
 
